@@ -6,13 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddMvc();
-
 builder.Services.AddSingleton<ITodoItemService, FakeTodoItemService>();
 
-
 var app = builder.Build();
-
-
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
