@@ -13,7 +13,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-//nuea modificacion
+//nueva modificacion
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
